@@ -3,13 +3,14 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-bughd"
     version="1.0.0">
-    <name>BugHD</name>
-    <description>Cordova Crash Reporter</description>
-    <license>Apache 2.0</license>
-    <keywords>cordova, crash reporter, bughd</keywords>
-    <repo>https://github.com/baidan4855/cordova-plugin-responsive-webview.git</repo>
-    <issue>https://github.com/baidan4855/cordova-plugin-responsive-webview/issues</issue>
-
+  <name>BugHD</name>
+  <description>Cordova Crash Reporter</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova, crash reporter, bughd</keywords>
+  <repo>https://github.com/baidan4855/cordova-plugin-responsive-webview.git</repo>
+  <issue>https://github.com/baidan4855/cordova-plugin-responsive-webview/issues</issue>
+  <hook type="after_plugin_install" src="src/hooks/after_plugin_install.js" />
+  <hook type="before_plugin_uninstall" src="src/hooks/before_plugin_uninstall.js" />
   <!-- android -->
   <platform name="android">
     <lib-file src="src/android/libs/Bughd_android_sdk_v1.3.7.jar" />

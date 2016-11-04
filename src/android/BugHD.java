@@ -6,8 +6,8 @@ import im.fir.sdk.FIR;
 public class BugHD extends Application {
   @Override
   public void onCreate() {
-
-      super.onCreate();
-      FIR.init(this);
+    super.onCreate();
+    System.out.println("BugHD running.......");
+    FIR.init(this);
   }
 }
