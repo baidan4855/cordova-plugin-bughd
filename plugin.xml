@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-bughd"
+    version="1.0.0">
+    <name>BugHD</name>
+    <description>Cordova Crash Reporter</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, crash reporter, bughd</keywords>
+    <repo>https://github.com/baidan4855/cordova-plugin-responsive-webview.git</repo>
+    <issue>https://github.com/baidan4855/cordova-plugin-responsive-webview/issues</issue>
+
+  <!-- android -->
+  <platform name="android">
+    <lib-file src="src/android/libs/Bughd_android_sdk_v1.3.7.jar" />
+    <source-file src="src/android/BugHD.java" target-dir="src/cn/com/ihealthlabs/cordova/plugins" />
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+      <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+      <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <meta-data android:value="739a367ab1096908560e99c43035859b" android:name="BUG_HD_SDK_GENERAL_KEY" />
+    </config-file>
+  </platform>
+</plugin>

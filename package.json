@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-bughd",
+  "version": "1.0.1",
+  "cordova": {
+    "id": "cordova-plugin-bughd",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "Cordova Crash Reporter",
+  "repository": "https://github.com/baidan4855/cordova-plugin-responsive-webview.git",
+  "issue": "https://github.com/baidan4855/cordova-plugin-responsive-webview/issues",
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "bughd"
+  ],
+  "author": "jackjiang",
+  "license": "MIT"
+}
